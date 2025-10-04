@@ -8,7 +8,7 @@ load_dotenv()
 
 # MongoDB connection
 MONGO_URI = os.getenv('MONGO_URI')
-DB_NAME = os.getenv('DB_NAME', 'customerfeedback')  # Default database name
+DB_NAME = os.getenv('DB_NAME', 'test')  # Default database name
 
 if not MONGO_URI:
     raise ValueError("MONGO_URI environment variable is required")
